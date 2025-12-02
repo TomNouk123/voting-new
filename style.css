@@ -1,0 +1,152 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 40px;
+    max-width: 834px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-title {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.arrow {
+    font-size: 42px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.group-card {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    position: relative;
+}
+
+.group-img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 18px;
+     z-index: 2;   /* ✅ Zorgt dat de foto altijd vóór de balk zit */
+    position: relative;
+}
+
+.number-badge {
+    position: absolute;
+    bottom: -20px;   /* ✅ NU OP DE AFBEELDING i.p.v. eronder */
+    left: -20px;     /* ✅ NU OP DE AFBEELDING i.p.v. ernaast */
+    width: 60px;
+    height: 60px;
+    background: #7BDE8A;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffffff;
+}
+
+.group-info {
+    background: #EDECEB;
+    padding: 22px;
+    margin-left: -40px;     /* ✅ DIT is de magische overlap */
+    margin-top: 18px;      /* ✅ Zorgt dat hij NIET boven de afbeelding uitkomt */
+    border-radius: 30px;
+    color: #454545;
+    width: 100%;
+    z-index: 1;
+}
+
+.group-name {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.05;
+    letter-spacing: 5px;
+}
+
+.agency {
+     margin: -2px 0 6px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.votes {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.members {
+    margin-top: 4px;    /* 👈 kleiner */
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #454545;
+    opacity: 0.95;
+    line-height: 1.3;   /* 👈 compacter */
+}
+
+.description {
+    margin-top: 4px;    /* 👈 compacter */
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #454545;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.group-info {
+    padding-left: 70px;   /* 🔥 DIT duwt de tekst naast de afbeelding */
+}
+
+.vote-fixed-btn {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 834px;      /* ✅ zelfde als je iPad-breedte */
+    background: #7BDE8A;
+    color: white;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* ✅ ZORGT DAT JE CONTENT NIET ONDER DE KNOP VERDWIJNT */
+body {
+    padding-bottom: 90px;
+}
+
+

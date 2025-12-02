@@ -1,0 +1,100 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 40px 0 60px;
+    max-width: 834px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.arrow {
+    font-size: 42px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* ✅ GRID 3 × 4 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 40px;
+}
+
+/* ✅ ELK VIERKANT */
+.grid-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ccc;
+}
+
+/* ✅ AFBEELDING */
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ✅ ZWARTE OVERLAY */
+.grid-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* ✅ TEKST IN HET MIDDEN */
+.grid-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+.close-btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
